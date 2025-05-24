@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { useAuthStore } from "../store/useAuthStore";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
 import { Link } from "react-router-dom";
-import {useAuthstore} from "../store/useauthstore.js"
-// import AuthImagePattern from "../components/AuthImagePattern";
-// import toast from "react-hot-toast";
+
+import AuthImagePattern from "../components/AuthImagePattern";
+import toast from "react-hot-toast";
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -13,7 +14,7 @@ const SignUpPage = () => {
     password: "",
   });
 
-  const { signup, isSigningUp } = useAuthstore();
+  const { signup, isSigningUp } = useAuthStore();
 
   const validateForm = () => {
     if (!formData.fullName.trim()) return toast.error("Full name is required");
@@ -142,11 +143,11 @@ const SignUpPage = () => {
       </div>
 
       {/* right side */}
-{/* <AuthImagePattern
+
+      <AuthImagePattern
         title="Join our community"
         subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
-      /> */}
-      
+      />
     </div>
   );
 };
