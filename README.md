@@ -1,7 +1,3 @@
-Here’s a professional and complete `README.md` for your **Chatty** real-time chat application deployed at [`chat-application-4zqm.onrender.com`](https://chat-application-4zqm.onrender.com):
-
----
-
 # 💬 Chatty – Real-time Chat Application
 
 Chatty is a sleek and modern real-time chat application built with the MERN stack and Socket.IO. It allows users to sign in, manage contacts, and exchange messages instantly.
