@@ -116,15 +116,3 @@ Deployed via [Render Static Site](https://render.com/docs/static-sites)
 * ✅ Push Notifications
 
 ---
-
-## 🤝 Contributors
-
-Made with ❤️ by \[Your Name]
-
----
-
-## 📄 License
-
-MIT License. Free to use and modify.
-
----
